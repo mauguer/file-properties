@@ -19,3 +19,12 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+Feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" 
